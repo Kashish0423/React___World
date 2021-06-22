@@ -25,6 +25,11 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    // on refresh we don't want to see our button when we are in mobile size
+    showButton();
+  }, []);
+
   window.addEventListener("resize", showButton);
 
   return (
