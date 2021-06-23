@@ -1,6 +1,7 @@
 import React from "react";
 import "../../App.css";
 import Footer from "../Footer";
+import TodoApp from "../TodoApp/TodoApp";
 
 const Services = () => {
   const mystyle = {
@@ -10,7 +11,7 @@ const Services = () => {
   return (
     <>
       <h1 className='services' style={mystyle}>
-        SERVICES
+        <TodoApp />
       </h1>
       <Footer />
     </>
