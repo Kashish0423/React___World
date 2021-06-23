@@ -10,10 +10,11 @@ const Services = () => {
 
   return (
     <>
-      <h1 className='services' style={mystyle}>
+      {/* <h1 className='services' style={mystyle}>
         <TodoApp />
-      </h1>
-      <Footer />
+      </h1> */}
+      <TodoApp />
+      {/* <Footer /> */}
     </>
   );
 };
