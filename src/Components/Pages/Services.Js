@@ -14,7 +14,8 @@ const Services = () => {
         <TodoApp />
       </h1> */}
       <TodoApp />
-      {/* <Footer /> */}
+
+      <Footer />
     </>
   );
 };
