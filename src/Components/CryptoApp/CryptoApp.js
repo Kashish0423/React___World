@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./CryptoApp.css";
 import axios from "axios";
 import Coin from "./Coin";
 

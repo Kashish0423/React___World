@@ -16,7 +16,7 @@ const Products = () => {
       </h1> */}
 
       <CryptoApp />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

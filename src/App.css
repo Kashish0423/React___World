@@ -6,7 +6,6 @@
 }
 
 .home,
-.services,
 .products,
 .sign-up {
   display: flex;
@@ -20,7 +19,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: black;
   font-size: 100px;
 }
 

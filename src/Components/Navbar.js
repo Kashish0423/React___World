@@ -63,6 +63,16 @@ const Navbar = () => {
               </Link>
             </li>
 
+            <li className='nav-item'>
+              <Link
+                to='/BreakingBad'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                BreakingBad
+              </Link>
+            </li>
+
             <li>
               <Link
                 to='/sign-up'
