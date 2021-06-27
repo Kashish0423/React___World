@@ -6,6 +6,10 @@ import TodoApp from "../TodoApp/TodoApp";
 const Services = () => {
   const mystyle = {
     backgroundImage: `url("/images/img-2.jpg")`,
+    backgroundPosition: `center`,
+    backgroundSize: `cover`,
+    backgroundRepeat: `no-repeat`,
+    height: `100vh`,
   };
 
   return (
