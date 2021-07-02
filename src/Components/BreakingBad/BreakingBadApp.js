@@ -3,6 +3,7 @@ import "./BreakingBadApp.css";
 import Header from "./Header";
 import CharacterGrid from "./CharacterGrid";
 import axios from "axios";
+import Search from "./Search.js";
 import Footer from "../Footer";
 
 const BreakingBadApp = () => {
@@ -17,11 +18,12 @@ const BreakingBadApp = () => {
 
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     const fetchItems = async () => {
       const result = await axios(
-        `https://www.breakingbadapi.com/api/characters`
+        `https://www.breakingbadapi.com/api/characters?name=${query}`
       );
 
       setItems(result.data);
@@ -29,11 +31,12 @@ const BreakingBadApp = () => {
     };
 
     fetchItems();
-  }, []);
+  }, [query]);
 
   return (
     <div className='bba-div'>
       <Header />
+      <Search getQuery={(q) => setQuery(q)} />
       <CharacterGrid isLoading={isLoading} items={items} />
       {/* <Footer /> */}
     </div>
