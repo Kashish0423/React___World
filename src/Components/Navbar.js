@@ -46,20 +46,20 @@ const Navbar = () => {
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/TaskManager'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Task Manager
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/Crypto'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Crypto
               </Link>
             </li>
 

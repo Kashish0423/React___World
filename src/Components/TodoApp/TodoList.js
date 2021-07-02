@@ -45,7 +45,7 @@ const TodoList = () => {
 
   return (
     <div>
-      <h1>What's the Plan for Today</h1>
+      <h1 className='todo-h1'>What's the Plan for Today</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}

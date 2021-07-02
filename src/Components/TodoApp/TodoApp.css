@@ -4,15 +4,19 @@
   padding: 0;
 }
 
-/* body {
- 
-} */
-.todo-app {
+:local(body) {
   background: linear-gradient(
     90deg,
     rgba(48, 16, 255, 1) 0%,
     rgba(100, 115, 255, 1) 100%
   );
+}
+.todo-app {
+  /* background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  ); */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   display: flex;
@@ -27,7 +31,7 @@
   padding-bottom: 32px;
 }
 
-h1 {
+.todo-h1 {
   margin: 32px 0;
   color: #fff;
   font-size: 24px;
