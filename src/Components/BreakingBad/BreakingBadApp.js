@@ -6,14 +6,14 @@ import axios from "axios";
 import Footer from "../Footer";
 
 const BreakingBadApp = () => {
-  const mystyle = {
-    backgroundImage: ` url("images/bg.jpg")`,
-    backgroundPosition: `center`,
-    backgroundSize: `cover`,
-    backgroundRepeat: `no-repeat`,
-    height: `100vh`,
-    color: `#fff`,
-  };
+  // const mystyle = {
+  //   backgroundImage: ` url("images/bg.jpg")`,
+  //   backgroundPosition: `center`,
+  //   backgroundSize: `cover`,
+  //   backgroundRepeat: `no-repeat`,
+  //   height: `100vh`,
+  //   color: `#fff`,
+  // };
 
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -32,12 +32,11 @@ const BreakingBadApp = () => {
   }, []);
 
   return (
-    <div style={mystyle} className='bba-div'>
+    <div className='bba-div'>
       <Header />
       <CharacterGrid isLoading={isLoading} items={items} />
+      {/* <Footer /> */}
     </div>
-
-    //   {/* <Footer /> */}
   );
 };
 

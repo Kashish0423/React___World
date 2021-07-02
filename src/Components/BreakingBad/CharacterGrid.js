@@ -6,18 +6,10 @@ const CharacterGrid = ({ items, isLoading }) => {
   ) : (
     <section className='bba-cards'>
       {items.map((item) => (
-        <h2>{item.name}</h2>
+        <h1 key={item.char_id}>{item.name}</h1>
       ))}
     </section>
   );
-
-  //   return (
-  //     <section className='bba-cards'>
-  //       {items.map((item) => (
-  //         <h1>{item.name}</h1>
-  //       ))}
-  //     </section>
-  //   );
 };
 
 export default CharacterGrid;
