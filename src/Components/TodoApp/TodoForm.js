@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import styles from "./TodoApp.module.css";
+import cx from "classnames";
 
 const TodoForm = (props) => {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
@@ -25,7 +27,7 @@ const TodoForm = (props) => {
   };
 
   return (
-    <form className='todo-form' onSubmit={handleSubmit}>
+    <form className={cx(styles.todoForm)} onSubmit={handleSubmit}>
       {props.edit ? (
         <>
           {" "}
@@ -34,11 +36,11 @@ const TodoForm = (props) => {
             placeholder='Update your item'
             value={input}
             name='text'
-            className='todo-input edit'
+            className={cx(styles.todoinput)}
             onChange={handleChange}
             ref={inputRef}
           />
-          <button className='todo-button edit'>Update </button>
+          <button className={styles.todobutton}>Update </button>
         </>
       ) : (
         <>
@@ -47,12 +49,12 @@ const TodoForm = (props) => {
             placeholder='Add item to list'
             value={input}
             name='text'
-            className='todo-input'
+            className={styles.todoinput}
             onChange={handleChange}
             ref={inputRef}
           />
 
-          <button className='todo-button'>Add </button>
+          <button className={styles.todobutton}>Add </button>
         </>
       )}
     </form>

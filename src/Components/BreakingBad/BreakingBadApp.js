@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./BreakingBadApp.css";
+import styles from "./BreakingBad.module.css";
 import Header from "./Header";
 import CharacterGrid from "./CharacterGrid";
 import axios from "axios";
 import Search from "./Search.js";
+import cx from "classnames";
 import Footer from "../Footer";
 
 const BreakingBadApp = () => {
@@ -34,7 +35,12 @@ const BreakingBadApp = () => {
   }, [query]);
 
   return (
-    <div className='bba-div'>
+    <div
+      className={cx(styles.div, styles.body)}
+      style={{
+        backgroundImage: ` url("images/bg.jpg")`,
+      }}
+    >
       <Header />
       <Search getQuery={(q) => setQuery(q)} />
       <CharacterGrid isLoading={isLoading} items={items} />

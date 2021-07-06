@@ -20,6 +20,10 @@ const Navbar = () => {
     }
   };
 
+  const changeColor = (color) => {
+    this.setState({ color });
+  };
+
   useEffect(() => {
     // on refresh we don't want to see our button when we are in mobile size
     showButton();

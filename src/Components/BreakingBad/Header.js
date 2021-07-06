@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./BreakingBad.module.css";
 
 const Header = () => {
   return (
-    <header className='bba-header'>
+    <header className={styles.header}>
       <img src={"images/logo.png"} alt='Nothing' />
     </header>
   );

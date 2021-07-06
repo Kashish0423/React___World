@@ -1,10 +1,11 @@
 import React from "react";
 import TodoList from "./TodoList";
-import "./TodoApp.css";
+import styles from "./TodoApp.module.css";
+import cx from "classnames";
 
 const TodoApp = () => {
   return (
-    <div className='todo-app'>
+    <div className={cx(styles.todoApp, styles.body)}>
       <TodoList />
     </div>
   );

@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Newsletter to recieve our best updates and daily happenings
+          Join the Newsletter to recieve our latest updates
         </p>
 
         <p className='footer-subscription-text'>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./BreakingBad.module.css";
 
 const Search = ({ getQuery }) => {
   const [text, setText] = useState("");
@@ -9,11 +10,11 @@ const Search = ({ getQuery }) => {
   };
 
   return (
-    <section className='bba-search'>
+    <section className={styles.search}>
       <form>
         <input
           type='text'
-          className='form-control'
+          className={styles.bbinput}
           placeholder='Find your Favourite Character'
           value={text}
           onChange={(e) => onChange(e.target.value)}

@@ -1,13 +1,15 @@
 import React from "react";
+import styles from "./BreakingBad.module.css";
+import cx from "classnames";
 
 const CharacterItem = ({ item }) => {
   return (
-    <div className='bba-card'>
-      <div className='bba-card-inner'>
-        <div className='bba-card-front'>
+    <div className={styles.card}>
+      <div className={styles.cardInner}>
+        <div className={styles.cardFront}>
           <img src={item.img} alt='' />
         </div>
-        <div className='bba-card-back'>
+        <div className={styles.cardBack}>
           <h1>{item.name}</h1>
           <ul>
             <li>

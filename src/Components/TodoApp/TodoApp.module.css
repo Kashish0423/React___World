@@ -2,23 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-:local(body) {
+body {
   background: linear-gradient(
     90deg,
     rgba(48, 16, 255, 1) 0%,
     rgba(100, 115, 255, 1) 100%
   );
 }
-.todo-app {
-  /* background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  ); */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.todoApp {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -31,7 +26,7 @@
   padding-bottom: 32px;
 }
 
-.todo-h1 {
+.todoh1 {
   margin: 32px 0;
   color: #fff;
   font-size: 24px;
@@ -42,11 +37,11 @@
   opacity: 0.4;
 }
 
-.todo-form {
+.todoform {
   margin-bottom: 32px;
 }
 
-.todo-input {
+.todoinput {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
@@ -56,11 +51,11 @@
   color: #fff;
 }
 
-.todo-input::placeholder {
+.todoinput::placeholder {
   color: #e2e2e2;
 }
 
-.todo-button {
+.todobutton {
   padding: 16px;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -75,11 +70,11 @@
   text-transform: capitalize;
 }
 
-.todo-input.edit {
+.todoinput.edit {
   border: 2px solid #149fff;
 }
 
-.todo-button.edit {
+.todobutton.edit {
   background: linear-gradient(
     90deg,
     rgba(20, 159, 255, 1) 0%,
@@ -88,13 +83,7 @@
   padding: 16px 22px;
 }
 
-.todo-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.todo-row {
+.todorow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +100,7 @@
   width: 90%;
 }
 
-.todo-row:nth-child(4n + 1) {
+.todorow:nth-child(4n + 1) {
   background: linear-gradient(
     90deg,
     rgba(93, 12, 255, 1) 0%,
@@ -119,7 +108,7 @@
   );
 }
 
-.todo-row:nth-child(4n + 2) {
+.todorow:nth-child(4n + 2) {
   background: linear-gradient(
     90deg,
     rgba(255, 12, 241, 1) 0%,
@@ -127,7 +116,7 @@
   );
 }
 
-.todo-row:nth-child(4n + 3) {
+.todorow:nth-child(4n + 3) {
   background: linear-gradient(
     90deg,
     rgba(20, 159, 255, 1) 0%,
@@ -142,11 +131,11 @@
   cursor: pointer;
 }
 
-.delete-icon {
+.deleteicon {
   margin-right: 5px;
   color: #fff;
 }
 
-.edit-icon {
+.editicon {
   color: #fff;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
+import styles from "./TodoApp.module.css";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
@@ -45,7 +46,7 @@ const TodoList = () => {
 
   return (
     <div>
-      <h1 className='todo-h1'>What's the Plan for Today</h1>
+      <h1 className={styles.todoh1}>What's the Plan for Today</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
