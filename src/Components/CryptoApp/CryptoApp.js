@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./CryptoApp.css";
+import styles from "./CryptoApp.module.css";
 import axios from "axios";
 import Coin from "./Coin";
 
@@ -28,14 +28,19 @@ const CryptoApp = () => {
   );
 
   return (
-    <div className='coin-app'>
-      <div className='coin-search'>
-        <h1 className='coin-text'>Search a currency</h1>
+    <div
+      className={styles.coinapp}
+      // style={{
+      //   backgroundImage: `url(https://lh3.googleusercontent.com/proxy/Ay54aNGqbklYesZVde4Oq9oKaSioHce5YXYGCK4obM2v21quEk9TnK21JbSBe59lXP-twIhWTsVedftGM8YCHjVC3iJxB5icTfiwCggXOUjJPYzTswchmzRd2GNO8U8RSyfyXb16mZUvob3-YvnYAlm5Em0IHoMTv94)`,
+      // }}
+    >
+      <div className={styles.coinsearch}>
+        <h1 className={styles.cointext}>Search a currency</h1>
         <form>
           <input
             type='text'
             placeholder='Search'
-            className='coin-input'
+            className={styles.coininput}
             onChange={handleChange}
           />
         </form>

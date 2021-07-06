@@ -32,7 +32,7 @@ const Footer = () => {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/'>How it works</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Videos</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/'>How it works</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>
@@ -70,11 +70,11 @@ const Footer = () => {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
+              ReactWorld
               <i className='fab fa-typo3' />
             </Link>
           </div>
-          <small className='website-rights'>TRVL © 2020</small>
+          <small className='website-rights'>Copyright © 2021</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
