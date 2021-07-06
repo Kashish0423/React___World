@@ -6,7 +6,12 @@ import "./HeroSection.css";
 const HeroSection = () => {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-2.mp4' autoPlay loop muted></video>
+      <video
+        src={process.env.PUBLIC_URL + "/videos/video-2.mp4"}
+        autoPlay
+        loop
+        muted
+      ></video>
       <h1>Adventure Awaits</h1>
       <p>What are you waiting for ? </p>
       <div className='hero-btns'>

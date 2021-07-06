@@ -5,17 +5,16 @@ import CharacterGrid from "./CharacterGrid";
 import axios from "axios";
 import Search from "./Search.js";
 import cx from "classnames";
-import Footer from "../Footer";
 
 const BreakingBadApp = () => {
-  // const mystyle = {
-  //   backgroundImage: ` url("images/bg.jpg")`,
-  //   backgroundPosition: `center`,
-  //   backgroundSize: `cover`,
-  //   backgroundRepeat: `no-repeat`,
-  //   height: `100vh`,
-  //   color: `#fff`,
-  // };
+  const mystyle = {
+    backgroundImage: `url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXa9U255tCrntxvL9dRk-fqI0Zk-d05SbRQ&usqp=CAU)`,
+    backgroundPosition: `center`,
+    backgroundSize: `cover`,
+    backgroundRepeat: `no-repeat`,
+    height: `100vh`,
+    color: `#fff`,
+  };
 
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -35,12 +34,7 @@ const BreakingBadApp = () => {
   }, [query]);
 
   return (
-    <div
-      className={cx(styles.div, styles.body)}
-      style={{
-        backgroundImage: ` url("images/bg.jpg")`,
-      }}
-    >
+    <div className={cx(styles.div, styles.body)} style={mystyle}>
       <Header />
       <Search getQuery={(q) => setQuery(q)} />
       <CharacterGrid isLoading={isLoading} items={items} />

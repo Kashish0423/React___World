@@ -4,7 +4,7 @@ import styles from "./BreakingBad.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src={"images/logo.png"} alt='Nothing' />
+      <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt='Nothing' />
     </header>
   );
 };
